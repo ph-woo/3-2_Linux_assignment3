@@ -6,7 +6,7 @@ then
 fi
 row=$1
 col=$2
-if [ $row -le 0 ] && [ $col -le 0 ]
+if [ $row -le 0 ] || [ $col -le 0 ]
 then
 	echo "Input must be greater than 0"
 	exit 0
